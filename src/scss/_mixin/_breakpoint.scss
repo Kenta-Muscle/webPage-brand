@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+//breakPoint
+$BREAK_POINT_PC: 1200px;
+$BREAK_POINT_TAB: 834px;
+$BREAK_POINT_SP: 640px;
+
+@mixin pc() {
+	@media screen and (min-width: $BREAK_POINT_SP) {
+		@content;
+	}
+}
+@mixin tab() {
+	@media screen and (min-width: $BREAK_POINT_SP) and (max-width: $BREAK_POINT_TAB - 0.02) {
+		@content;
+	}
+}
+@mixin sp() {
+	@media screen and (max-width: $BREAK_POINT_SP - 0.02) {
+		@content;
+	}
+}
