@@ -21,7 +21,11 @@
       <ul class="header__links">
         <% header_links.forEach(item => { %>
           <li class="header__links__item">
+            <% if (item == 'Contact') { %>
+            <a href="mailto:test.com" class="header__links__item__link">
+            <% } else { %>
             <a href="#<%= item.toLowerCase() %>" class="header__links__item__link">
+            <% } %>
               <%= item %>
             </a>
           </li>
