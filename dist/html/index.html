@@ -17,15 +17,27 @@
   <header class="header">
     <h1 class="header__title">Wooden Jewelry</h1>
     <nav>
-      <% var header_links = ['Concept', 'Work', 'Contact'] %>
+      
       <ul class="header__links">
-        <% header_links.forEach(item => { %>
+        
           <li class="header__links__item">
-            <a href="#<%= item.toLowerCase() %>" class="header__links__item__link">
-              <%= item %>
+            <a href="#concept" class="header__links__item__link">
+              Concept
             </a>
           </li>
-        <% }); %>
+        
+          <li class="header__links__item">
+            <a href="#work" class="header__links__item__link">
+              Work
+            </a>
+          </li>
+        
+          <li class="header__links__item">
+            <a href="#contact" class="header__links__item__link">
+              Contact
+            </a>
+          </li>
+        
       </ul>
     </nav>
   </header>
